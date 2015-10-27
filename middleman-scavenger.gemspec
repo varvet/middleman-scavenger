@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Johan Halse"]
   s.email       = ["johan.halse@varvet.com"]
+  s.license     = "MIT"
   s.homepage    = "https://github.com/varvet/middleman-scavenger"
   s.summary     = %q{A middleman extension for automatically creating SVG sprite sheets}
   s.description = %q{Discovers and compiles SVG files into a sprite sheet that can be used for icons and such.}
@@ -20,5 +21,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("middleman-core", [">= 3.3.12"])
 
   # Additional dependencies
-  s.add_runtime_dependency("nokogiri", "~> 1.6.6")
+  s.add_runtime_dependency("nokogiri", "~> 1.6")
 end
