@@ -1,0 +1,15 @@
+(function() {
+  function reqListener () {
+    document.body.insertAdjacentHTML('afterbegin', this.responseText);
+    document.body.children[0].style.display = 'none';
+  }
+
+  function requestSprite() {
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener('load', reqListener);
+    oReq.open('GET', '<%= image_path svg_sprite_path %>');
+    oReq.send();
+  }
+
+  requestSprite();
+})();
