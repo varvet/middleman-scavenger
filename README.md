@@ -6,6 +6,7 @@ A Middleman extension for creating svg sprite sheets. It's usable in modern (IE9
 ## Installation and quick start
 
 - Put the SVG:s you want to include in `source/images/svg`.
+- Add `gem "middleman-scavenger"` to your gemfile and run `bundle install`
 - Add `activate :middleman_scavenger` to your config.rb file
 - Add `//= require middleman-scavenger` to your all.js file
 
