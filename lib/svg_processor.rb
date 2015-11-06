@@ -8,7 +8,7 @@ class SVGProcessor
   end
 
   def rebuild
-    @svgs = Dir["#{@path}/*"].map { |file| get_svg(file) }
+    @svgs = Dir["#{@path}/*.svg"].map { |file| get_svg(file) }
     puts "rebuilding: #{@svgs.length} svgs found"
     @symbols = @svgs.map { |svg| convert_to_symbol(svg) }
 
