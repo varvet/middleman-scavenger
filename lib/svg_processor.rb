@@ -15,7 +15,7 @@ class SVGProcessor
     @symbol_string = @symbols.join("\n")
 
     if @sprite_path != nil
-      File.write("./source/images/#{@sprite_path}", "<svg xmlns=\"http://www.w3.org/2000/svg\">#{@symbol_string}</svg>")
+      File.write(@sprite_path, "<svg xmlns=\"http://www.w3.org/2000/svg\">#{@symbol_string}</svg>")
     end
   end
 
