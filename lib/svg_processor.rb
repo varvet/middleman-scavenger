@@ -38,8 +38,8 @@ class SVGProcessor
 
   def convert_to_symbol(svg)
     svg[:xml].xpath('//@id').remove
-    g = svg[:xml].at_css("g")
+    content = svg[:xml].at_css("svg").children
     viewbox_size = svg[:xml].xpath("//@viewBox").first.value
-    "<symbol viewBox=\"#{viewbox_size}\" id=\"#{@prefix}#{svg[:filename]}\">#{g.to_s}</symbol>"
+    "<symbol viewBox=\"#{viewbox_size}\" id=\"#{@prefix}#{svg[:filename]}\">#{content.to_s.strip}</symbol>"
   end
 end
