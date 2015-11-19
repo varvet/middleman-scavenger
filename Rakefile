@@ -1,14 +1,15 @@
-require 'bundler'
+require "bundler"
+require "rake/testtask"
+
 Bundler::GemHelper.install_tasks
 
-require 'cucumber/rake/task'
-
-Cucumber::Rake::Task.new(:cucumber, 'Run features that should pass') do |t|
-  t.cucumber_opts = "--color --tags ~@wip --strict --format #{ENV['CUCUMBER_FORMAT'] || 'Fivemat'}"
+Rake::TestTask.new(:minitest) do |t|
+  t.pattern = "test/unit/*.rb"
+  t.verbose = true
 end
 
-require 'rake/clean'
+require "rake/clean"
 
-task test: ['cucumber']
+task test: ["minitest"]
 
 task default: :test

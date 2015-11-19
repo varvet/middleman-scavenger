@@ -1,5 +1,5 @@
 # Require core library
-require 'middleman-core'
+require "middleman-core"
 
 # Extension namespace
 class MiddlemanScavenger < ::Middleman::Extension

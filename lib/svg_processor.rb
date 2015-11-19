@@ -1,4 +1,5 @@
 class SVGProcessor
+  require "middleman-core/logger"
   require "nokogiri"
 
   def initialize(path, prefix, sprite_path)
@@ -9,7 +10,7 @@ class SVGProcessor
 
   def rebuild
     @svgs = Dir["#{@path}/*.svg"].map { |file| get_svg(file) }
-    puts "rebuilding: #{@svgs.length} svgs found"
+    logger.debug "rebuilding: #{@svgs.length} svgs found"
     @symbols = @svgs.map { |svg| convert_to_symbol(svg) }
 
     @symbol_string = @symbols.join("\n")
@@ -24,6 +25,10 @@ class SVGProcessor
   end
 
   private
+
+  def logger
+    ::Middleman::Logger.singleton(1)
+  end
 
   def get_svg(file)
     f = File.open(file)
