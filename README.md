@@ -1,5 +1,7 @@
 # Middleman-scavenger
 
+[![Gem Version](http://img.shields.io/gem/v/middleman-scavenger.svg)](https://rubygems.org/gems/middleman-scavenger) [![Code Climate](https://codeclimate.com/github/varvet/middleman-scavenger/badges/gpa.svg)](https://codeclimate.com/github/varvet/middleman-scavenger) [![Build Status](https://travis-ci.org/varvet/middleman-scavenger.svg?branch=master)](https://travis-ci.org/varvet/middleman-scavenger)
+
 A Middleman extension for creating svg sprite sheets. It's usable in modern (IE9+) browsers, uses `<symbol>` to include the svg:s, and can optionally inline the SVG images for speed. If you need legacy browser support it combines well with [svg4everybody](https://github.com/jonathantneal/svg4everybody).
 
 
