@@ -1,9 +1,6 @@
-require "minitest/autorun"
+require_relative "test_helper"
 require "middleman-scavenger"
 require "svg_processor"
-require "codeclimate-test-reporter"
-
-CodeClimate::TestReporter.start
 
 class SvgProcessorTest < Minitest::Test
   def teardown

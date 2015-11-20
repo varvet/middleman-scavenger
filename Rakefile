@@ -4,7 +4,7 @@ require "rake/testtask"
 Bundler::GemHelper.install_tasks
 
 Rake::TestTask.new(:minitest) do |t|
-  t.pattern = "test/unit/*.rb"
+  t.pattern = "test/unit/*_test.rb"
   t.verbose = true
 end
 
