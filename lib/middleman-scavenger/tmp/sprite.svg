@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"><symbol viewBox="0 0 11.756 6.987" id="icon-chevron-down"><g>
+	
+		<polyline fill="none" stroke="#492A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="   1,1 5.928,5.987 10.756,1  "/>
+</g></symbol>
+<symbol viewBox="0 0 32 21" id="icon-hamburger"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSLayerGroup" fill="#9C928A">
+            <rect sketch:type="MSShapeGroup" x="0" y="0" width="32" height="3" rx="3"/>
+            <rect sketch:type="MSShapeGroup" x="0" y="9" width="32" height="3" rx="3"/>
+            <rect sketch:type="MSShapeGroup" x="0" y="18" width="32" height="3" rx="3"/>
+        </g>
+    </g></symbol>
+<symbol viewBox="0 0 32 34" id="icon-search"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSLayerGroup" fill="#FA0154">
+            <path d="M24.782877,24.2269458 L31.4795539,30.9236226 C32.0469247,31.4909934 32.049531,32.408277 31.476514,32.981294 C30.9074644,33.5503437 29.9831541,33.5486452 29.4188427,32.9843338 L22.5723275,26.1378187 C20.2963133,27.7259519 17.5294357,28.6571429 14.5454545,28.6571429 C6.77999625,28.6571429 0.484848485,22.3507538 0.484848485,14.5714286 C0.484848485,6.79210338 6.77999625,0.485714286 14.5454545,0.485714286 C22.3109128,0.485714286 28.6060606,6.79210338 28.6060606,14.5714286 C28.6060606,18.3084303 27.1533849,21.7055356 24.782877,24.2269458 Z M14.5454545,25.7428571 C8.38664279,25.7428571 3.39393939,20.7412382 3.39393939,14.5714286 C3.39393939,8.40161894 8.38664279,3.4 14.5454545,3.4 C20.7042663,3.4 25.6969697,8.40161894 25.6969697,14.5714286 C25.6969697,20.7412382 20.7042663,25.7428571 14.5454545,25.7428571 L14.5454545,25.7428571 Z" sketch:type="MSShapeGroup"/>
+        </g>
+    </g></symbol></svg>

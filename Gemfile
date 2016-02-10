@@ -14,7 +14,6 @@ end
 group :test do
   gem "codeclimate-test-reporter", require: nil
   gem "cucumber"
-  gem "fivemat"
   gem "aruba"
   gem "rspec"
 end
