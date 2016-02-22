@@ -2,22 +2,18 @@ class SVGProcessor
   require "middleman-core/logger"
   require "nokogiri"
 
-  def initialize(path, prefix, sprite_path)
+  def initialize(path, prefix)
     @path = path
     @prefix = prefix
-    @sprite_path = sprite_path
+    build
   end
 
-  def rebuild
-    @svgs = Dir["#{@path}/*.svg"].map { |file| get_svg(file) }
-    logger.debug "rebuilding: #{@svgs.length} svgs found"
-    @symbols = @svgs.map { |svg| convert_to_symbol(svg) }
+  def build
+    svgs = Dir["#{@path}/*.svg"].map { |file| get_svg(file) }
+    logger.info "Middleman-Scavenger rebuilding: #{svgs.length} svgs found"
+    symbols = svgs.map { |svg| convert_to_symbol(svg) }
 
-    @symbol_string = @symbols.join("\n")
-
-    if @sprite_path != nil
-      File.write(@sprite_path, "<svg xmlns=\"http://www.w3.org/2000/svg\">#{@symbol_string}</svg>")
-    end
+    @symbol_string = symbols.join("\n")
   end
 
   def to_s
