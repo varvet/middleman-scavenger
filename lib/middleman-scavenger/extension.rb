@@ -22,6 +22,8 @@ class MiddlemanScavenger < ::Middleman::Extension
     @prefix = options.prefix
     @sprite_path = options.sprite_path
 
+    app.config[:svg_sprite_path] = options.sprite_path
+
     # Make extension accessible inside on_change closure
     middleman_scavenger = self
 
@@ -57,7 +59,7 @@ class MiddlemanScavenger < ::Middleman::Extension
 
   helpers do
     def scavenger_sprite_path
-      image_path external_sprite_path
+      image_path app.config[:svg_sprite_path]
     end
 
     def inline_svg_sprite

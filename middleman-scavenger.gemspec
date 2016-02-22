@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "middleman-scavenger"
-  s.version     = "1.0.2"
+  s.version     = "2.0.0"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Johan Halse"]
   s.email       = ["johan.halse@varvet.com"]
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # The version of middleman-core your extension depends on
-  s.add_runtime_dependency("middleman-core", [">= 3.3.12"])
+  s.add_runtime_dependency("middleman-core", [">= 4.1"])
 
   # Additional dependencies
   s.add_runtime_dependency("nokogiri", "~> 1.6")
