@@ -5,7 +5,7 @@ require "middleman-core"
 class MiddlemanScavenger < ::Middleman::Extension
   option :path, "./source/images/svg", "Directory containing SVG files"
   option :prefix, "", "Optional prefix for icon names"
-  option :sprite_path, "sprite.svg", "Static file to write svg spritesheet to"
+  option :sprite_path, "./source/images/sprite.svg", "Static file to write svg spritesheet to"
 
   def initialize(app, options_hash={}, &block)
     super
@@ -34,7 +34,7 @@ class MiddlemanScavenger < ::Middleman::Extension
 
   helpers do
     def scavenger_sprite_path
-      image_path svg_sprite_path
+      image_path File.basename(svg_sprite_path)
     end
 
     def inline_svg_sprite

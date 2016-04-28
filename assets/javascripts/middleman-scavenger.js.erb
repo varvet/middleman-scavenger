@@ -7,7 +7,7 @@
   function requestSprite() {
     var oReq = new XMLHttpRequest();
     oReq.addEventListener('load', requestListener);
-    oReq.open('GET', '<%= image_path svg_sprite_path %>');
+    oReq.open('GET', '<%= scavenger_sprite_path %>');
     oReq.send();
   }
 
