@@ -42,7 +42,7 @@ class MiddlemanScavenger < ::Middleman::Extension
     end
 
     def svg(name, options=nil)
-      if defined?(options)
+      if !options.nil?
         attrs = options.map {|k,v| "#{k}=\"#{v}\"" }.join(" ")
         "<svg #{attrs}><use xlink:href=\"##{name}\" /></svg>"
       else
