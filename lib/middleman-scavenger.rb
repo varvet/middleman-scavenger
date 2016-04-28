@@ -12,7 +12,7 @@ class MiddlemanScavenger < ::Middleman::Extension
 
     require "svg_processor"
 
-    processor_instance = SVGProcessor.new(options.path, options.prefix, options.sprite_path)
+    processor_instance = SVGProcessor.new(options.path, options.prefix, "source/#{options.sprite_path}")
     processor_instance.rebuild
     app.set :svg_processor, processor_instance
     app.set :svg_sprite_path, options.sprite_path
